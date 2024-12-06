@@ -1,18 +1,16 @@
 my_dict = {'Dima': 2005, 'Alisa': 2007}
-print (my_dict)
-print (my_dict ['Dima'])
-print (my_dict.get ('Semyon'))
-print (my_dict)
-my_dict.update ({'Artem': 2007,
-                 'Sergei': 2006})
-print (my_dict)
-print (my_dict.pop ('Alisa'))
-print (my_dict)
+print(my_dict)
+print(my_dict['Dima'])
+print(my_dict.get('Stepa'))
+my_dict.update({'Artem': 2007,'Sergei': 2006})
+a = my_dict.pop('Alisa')
+print(a)
+print(my_dict)
 
-#Множества
-my_set = {1, 2, 3, 4, 4, 5, 5, 'String', 42.5, 'String'}
-print (my_set)
-print (my_set.add ('Elephant'))
-print (my_set.add (8))
-print (my_set.discard(1))
-print (my_set)
+#Множество
+my_set = {1,1,2,'Яблоко',3,3}
+print(my_set)
+my_set.add(123.4)
+my_set.add(5)
+my_set.discard(2)
+print(my_set)
