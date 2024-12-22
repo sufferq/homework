@@ -1,0 +1,16 @@
+2024-12-22 16:59:39,527 | WARNING | Невереный тип данных лоя объекта Runner
+Traceback (most recent call last):
+  File "D:\games\PyCharm\PythonProjects\PP1\tests_12_4.py", line 23, in test_run
+    run = Runner(352627)
+          ^^^^^^^^^^^^^^
+  File "D:\games\PyCharm\PythonProjects\PP1\rt_with_exceptions.py", line 6, in __init__
+    raise TypeError(f'Имя может быть только строкой, передано {type(name).__name__}')
+TypeError: Имя может быть только строкой, передано int
+2024-12-22 16:59:39,528 | WARNING | Неверная скорость для Runner
+Traceback (most recent call last):
+  File "D:\games\PyCharm\PythonProjects\PP1\tests_12_4.py", line 13, in test_walk
+    walker = Runner('Петя', -5)
+             ^^^^^^^^^^^^^^^^^^
+  File "D:\games\PyCharm\PythonProjects\PP1\rt_with_exceptions.py", line 11, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -5
